@@ -1,0 +1,631 @@
+body{
+
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #707070;
+    font-weight: normal;
+    font-family: Tahoma;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 23px;
+    color: #777678;
+    font-family: SansSerif;
+    line-height: 1.3;
+    
+}
+button{
+    background: none;
+    border: 1px solid #CAB7A6;
+    color: #fff;
+    background-color: #CAB7A6;
+    text-transform: uppercase;
+    padding: 9px 20px;
+    transition: .5s all ease
+}
+button:hover{
+    background: #fff;
+    border: 1px solid #CAB7A6;
+    color: #333;
+}
+.img{padding: 0;}
+
+/***** Start Header ****/
+.header {
+    position: relative;
+    height: 750px;
+    background-image: url(../imags/slider/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+.header .navbar-default {
+    background: none;
+    border: none;
+    border-color: none;
+    margin-bottom: 100px;
+    padding-top: 24px
+}
+
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    transition: .4s all ease;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    background: none
+}
+.header .navbar-default .navbar-nav > li > a:hover{
+    color: #222;
+}
+.header .navbar > .container .navbar-brand,
+.header .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+    font-size: 30px;
+    color: #fff
+}
+
+
+
+/* swiper slider */
+.header .banner {
+    position: relative;
+    height: 180px;
+    padding: 11px 0 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .dg-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.header .dg-wrapper {
+    width: 320px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.header .dg-wrapper a {
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header .dg-wrapper a:first-child {
+    z-index: 2;
+}
+
+.header .dg-wrapper a img {
+    display: block;
+    -moz-box-shadow: 1px 0px 10px 7px #CAB7A6;
+    -webkit-box-shadow: 1px 0px 10px 7px #CAB7A6;
+    box-shadow: 1px 0px 10px 7px #CAB7A6;
+    border-radius: 4px;
+    width: 100%;
+    height: 400px;
+    background: #fff;
+
+}
+
+.header .dg-wrapper a.dg-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+.header .dg-wrapper a.dg-transition-fast {
+    transition: all 0.2s ease-in-out;
+}
+
+.header .dg-container nav {
+    display: none;
+}
+
+.header .dg-container nav span:hover {
+    opacity: 1;
+}
+
+.header .dg-container nav span.dg-next {
+    background-position: top right;
+    margin-left: 10px;
+}
+
+.header .dg-container #lightButton2 {
+    bottom: 20px;
+}
+
+.header .dg-container .button {
+    position: relative;
+    z-index: 5;
+    width: 0px;
+    top: -180px
+}
+
+.header .dg-container .button li {
+    cursor: pointer;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #7A6161;
+    
+}
+
+.header .dg-container .button .light {
+    background: #CAB7A6;
+}
+/***** End Header ****/
+
+
+/***** Start Welcome ****/
+
+.welcome{
+    display: block;
+    padding-top:70px;
+    overflow: hidden;
+    height: 550px;
+    width: 100%;
+}
+.welcome .content{
+    padding-left: 50px;
+    height: 400px;
+    width: 45%;
+    margin-right: 5%;
+}
+.welcome .content::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 4px;
+    background: #CAB7A6
+}
+.welcome .content button{
+    margin-top: 20px
+}
+.welcome .img{
+    height: 390px;
+}
+.welcome .img img{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #707070;
+}
+/***** End Welcome ****/
+
+
+/***** start services ****/
+.services{
+    position: relative;
+    padding-top: 10px
+}
+.services div > div {
+
+    display: block;
+}
+.services > div .img {
+    margin: 35px 0 0
+}
+.services h1{
+    margin-bottom: 90px;
+    text-align: center;
+}
+.services h1::after{
+    position: absolute;
+    content: "our services";
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #8E8E8E;
+}
+.services .content {
+    border-bottom: 4px solid #CAB7A6;
+    min-height: 435px;
+    
+}
+.services .content h2 {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #CAB7A6;
+    text-align: center;
+    line-height: 100px;
+}
+.services .content h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Comic Sans MS;
+    color: #8E8E8E;
+    margin: 20px 0;
+}
+.services .content p{margin: 10px 0 0;}
+.services .img img{
+    width: 100%;
+    height: 400px;
+    border: 1px solid #707070;
+}
+.services .box-1 .content{
+    width: 45%;
+    margin-right: 5%;
+    
+}
+.services .box-2{
+    margin: 30px 0 40px;
+}
+.services .box-2 .content{
+    
+}
+.services .box-2 .img{
+    width: 45%;
+    margin-right: 5%;
+}
+.services .box-3 .content{
+    width: 45%;
+    margin-right: 5%;
+    
+}
+.services .box-3 .img{
+
+        
+}
+/***** End services ****/
+
+
+
+/******* Start cordinators **********/
+
+.cordin {
+    margin: 50px 0;
+    text-align: center;
+}
+.cordin h1{padding: 50px 0;color: #707070}
+.cordin h1 span{
+    font-size: 50px;
+}
+.cordin h3{
+    font-family: Comic Sans MS;
+    color: #8E8E8E;
+}
+.cordin img{
+    border-radius: 50%;
+    border: 1px solid #707070;
+}
+.cordin .box-1,
+.cordin .box-2,
+.cordin .box-3{
+    margin-bottom: 20px;
+}
+
+/******** End cordinators ***********/
+
+
+
+/******* Start Gallary **********/
+
+.gallary{
+    text-align: center;
+}
+.gallary h1{
+    position: relative;
+    margin: 80px 0 90px;
+}
+.gallary h1 span {
+    font-size: 50px;
+    color: #CAB7A6
+}
+.gallary h1::after {
+    position: absolute;
+    content: "photos";
+    top: 59px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #8E8E8E;
+}
+.gallary img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #707070;
+    transition: transform .2s ease-in-out;
+}
+.gallary .a img:hover{}
+.gallary .container div > div{margin-bottom: 20px;}
+.gallary .box-1,
+.gallary .box-3,
+.gallary .box-2{
+    padding: 0;  
+}
+.gallary .box-2 > div {
+    height: 610px;
+    width: 103%;
+}
+.gallary .box-1 > div,
+.gallary .box-3 > div{
+    width: 390px;
+    height: 400px
+}
+
+@media (min-width: 576px) {
+    .gallary .box-2 {
+        display: none;
+    }
+  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .gallary .box-2 {
+        padding-left: 50px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .gallary .box-2 {
+        display: block;
+        padding-left: 0px;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+/******** End Gallary ***********/
+
+
+
+/******** start Comments ***********/
+.comment{
+    position: relative;
+    text-align: center;
+    margin: 40px 0
+}
+.comment h1 span {
+    font-size: 50px;
+    color: #CAB7A6
+}
+.comment .carousel-inner{
+    height: 350px;
+    background-color: #FCF9F9;
+    border: 1px solid #ccc
+}
+.comment .carousel-inner .item {
+    margin: 30px 60px;
+    height: 100%;
+}
+.comment .carousel-inner .item .carousel-caption{
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 80px;
+    line-height: 350px;
+}
+.comment .carousel-inner .item img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 24px auto;
+    padding: 5px;
+    border-radius: 100%;
+}
+.comment .carousel-inner .item h2{
+    color: #5A585A;
+    font-family: Comic Sans MS;
+    text-align: left;
+    width: 100%;
+    font-weight: lighter;
+}
+.comment .carousel-inner .item p{
+    text-align: left;
+    width: 100%
+}
+.comment .carousel .carousel-control{
+    position: inherit;
+    background: none;
+    line-height: 350px;
+    top: 0;
+    bottom: auto;
+}
+.comment .carousel .right img{right: -10px}
+.comment .carousel .left img{left: 20px;}
+.comment .carousel .carousel-control img{
+    top: 145px;
+    position: absolute;
+    background: none;
+    line-height: 350px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: #CAB7A6;
+    border-radius: 30px;
+}
+
+
+
+/******** End Comments ***********/
+
+
+
+
+
+/******** start contact-us ***********/
+
+.contact-us{
+    padding: 60px 0;
+    text-align: center;
+}
+.contact-us h1::first-letter{
+    font-size: 50px;
+    color: #CAB7A6
+}
+.contact-us h1{
+    margin: 10px 0;
+}
+.contact-us h2 {
+    font-size: 20px;
+    color: #6C6969;
+    margin: 5px 0 35px 0;
+}
+.contact-us .forms{
+    text-align: left;
+    font-family: Comic Sans MS;
+    
+}
+.contact-us .forms input{
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 1px solid #D1C0B1
+}
+.contact-us .forms input:first-of-type{
+    width: 270px
+}
+.contact-us .forms input:nth-child(2){
+    width: 370px
+}
+.contact-us .forms textarea {
+    border: 1px solid #D1C0B1;
+    border-radius: 20px;
+    resize: none;
+    height: 165px;
+    font-size: 18px;
+    margin-bottom: 21px;
+    width: 600px
+}
+.contact-us .forms button{
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 9px 26px
+}
+.contact-us .data .icons{
+    padding: 62px 0 0 0;
+    margin-bottom: 30px
+}
+.contact-us .data .icons i{
+    display: block;
+    color: #CAB7A6;
+    margin-bottom: 20px;
+    text-align: left
+}
+.contact-us .data .icons i span
+{
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px;
+    color: #333;
+}
+.contact-us .data ul {
+    list-style: none;
+    padding: 0
+}
+.contact-us ul li {
+    display: inline-block;
+    list-style: none;
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 100%;
+    transition: .5s all ease;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    background-color: #333;
+    border: 2px solid #333;
+}
+.contact-us ul li i{
+    width: 100%;
+    height: 100%;
+    line-height: 44px;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.contact-us ul li:hover{
+    background-color: #CAB7A6;
+    color: #CAB7A6;
+    cursor: pointer;
+    transition: .5s all ease;
+    border: 2px solid #333;
+}
+.contact-us ul li i:hover{
+    color: #333
+}
+
+
+/******** End contact-us ***********/
+
+
+
+/******** start footer ***********/
+
+.footer{
+    background: #D1C0B1;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 19px
+}
+
+
+
+
+/******** End footer ***********/
+
+
+
+/***** scroll top *****/
+
+.to-top{
+    position: fixed;
+    color: #333;
+    border-radius: 50%;
+    bottom: 90px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 99999;
+    cursor: pointer;
+    display:none;
+    background: #707070;
+    border: 3px solid #707070
+}
+.to-top:hover{
+    transition: .5s all ease-in-out;
+    color: #D1C0B1;
+    border: 3px solid #D1C0B1;
+    transform: rotate(720deg)
+}
+/**** scroll top *****/
+
